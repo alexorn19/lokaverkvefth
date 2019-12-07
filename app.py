@@ -247,5 +247,5 @@ def delete_article(id):
     return redirect(url_for('dashboard'))
 
 if __name__ == '__main__':
-    app.secret_key='alex12345'
+    app.secret_key = os.urandom(24)
     app.run(debug=True)
