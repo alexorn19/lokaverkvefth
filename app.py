@@ -6,7 +6,7 @@ from passlib.hash import sha256_crypt
 from functools import wraps
 
 app = Flask(__name__)
-app.secret_key = os.urandom(24)
+app.secret_key = 'alexleyni'
 
 # Config MySQL
 app.config['MYSQL_HOST'] = 'tsuts.tskoli.is'
